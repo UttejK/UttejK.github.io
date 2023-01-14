@@ -170,9 +170,6 @@ body.light-theme {
 
 .light-theme .skills__content,
 .light-theme .contact__card,
-.light-theme .footer__title,
-.light-theme .footer__link,
-.light-theme .footer__copy,
 .light-theme .work__card {
 	box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
@@ -238,6 +235,7 @@ body.light-theme {
 	z-index: var(--z-fixed);
 	transition: 0.4s;
 	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .nav {
@@ -648,6 +646,7 @@ body.light-theme {
 	align-items: center;
 	justify-content: center;
 	column-gap: 0.25rem;
+	color: inherit;
 }
 
 .contact__button:hover .contact__button-icon {
