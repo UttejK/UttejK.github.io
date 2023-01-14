@@ -426,6 +426,7 @@ body.light-theme {
 	background-color: transparent;
 	border: 2px solid var(--first-color);
 	color: var(--first-color);
+	cursor: pointer;
 }
 
 .button:hover {
@@ -946,4 +947,12 @@ footer__link {
 		padding: 0.4rem;
 		border-radius: 0.5rem;
 	}
+}
+
+#Resume{
+	--width: 50vw;
+	width: var(--width);
+	height: calc(var(--width)*1.414 + 10px);
+	margin-left: calc((100vw - var(--width)) / 2);
+	
 }

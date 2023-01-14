@@ -97,3 +97,16 @@ const sr = ScrollReveal({
 sr.reveal('.home__data')
 sr.reveal('.home__handle', {delay: 700})
 sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})
+
+document.getElementById("showcv").addEventListener('click', showResume);
+
+function showResume(event){
+    event.preventDefault();
+    var x = document.getElementById("Resume");
+    console.log(x, x.style.display);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
