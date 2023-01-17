@@ -401,26 +401,31 @@
 
                     <div class="contact__content">
                         <h3 class="contact__title">Write to me</h3>
-                        <form action="" class="contact__form">
+                        <form action="https://api.web3forms.com/submit" class="contact__form" method="POST">
+
+                            <input type="hidden" name="apikey" value="9b26dda2-2b64-477c-83a8-03c9cd2bdbcb">
 
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag ">Name</label>
-                                <input type="text" placeholder="Type Your Name" class="contact__form-input">
+                                <label for="name" class="contact__form-tag ">Name</label>
+                                <input id="name" name="name" type="text" placeholder="Type Your Name" class="contact__form-input">
 
                             </div>
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Email</label>
-                                <input type="email" placeholder="Type Your Email" class="contact__form-input">
+                                <label for="email" class="contact__form-tag">Email</label>
+                                <input id="email" name="email" type="email" placeholder="Type Your Email" class="contact__form-input">
 
                             </div>
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Message</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Type in your Message" class="contact__form-input"></textarea>
+                                <label for="message" class="contact__form-tag">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type in your Message" class="contact__form-input"></textarea>
 
                             </div>
+
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
                             
                             <button type="submit" class="button">Send Message</button>
                         </form>
+                        
                         
                     </div>
                         
