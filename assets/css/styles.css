@@ -765,6 +765,49 @@ footer__link {
 	background-color: hsl(var(--second-hue), 8%, 42%);
 }
 
+
+.popup {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	gap: 2rem;
+	top: 0;
+	height: 100%;
+}
+
+.caroImage {
+	padding: 1rem;
+	border-radius: .5rem ;
+	background: #3f3f3f70;
+}
+
+.caroImage > img {
+
+	/* aspect-ratio: 4 / 5; */
+	width: 500px;
+	object-fit: scale-down;
+
+}
+
+.hidden {
+	display: none;
+}
+
+.leftarrow,
+.rightarrow {
+	color: #fff;
+	font-size: 3rem;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.work__card a {
+	cursor: pointer;
+}
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
