@@ -797,10 +797,19 @@ footer__link {
 
 .leftarrow,
 .rightarrow {
+
 	color: #fff;
 	font-size: 3rem;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 2rem;
+	
 }
+
+.light-theme .leftarrow,
+.light-theme .rightarrow{
+	color: #000;
+}
+
 
 .work__card a {
 	cursor: pointer;
