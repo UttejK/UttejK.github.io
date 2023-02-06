@@ -1,3 +1,9 @@
+import 'boxicons/css/boxicons.min.css';
+import './styles.css';
+
+import mixitup from "mixitup";
+import ScrollReveal from "scrollreveal";
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
     const header = document.getElementById('header')
@@ -77,7 +83,6 @@ function activeWork() {
 
 linkWork.forEach(l => l.addEventListener('click', activeWork))
 
-/*=============== SWIPER TESTIMONIAL ===============*/
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
