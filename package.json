@@ -1,0 +1,32 @@
+{
+  "name": "uttejk.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "parcel serve src/index.html --no-cache --port 3000",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UttejK/UttejK.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UttejK/UttejK.github.io/issues"
+  },
+  "homepage": "https://github.com/UttejK/UttejK.github.io#readme",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "mixitup": "^3.3.1",
+    "scrollreveal": "^4.0.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "rimraf": "^4.1.2"
+  }
+}
