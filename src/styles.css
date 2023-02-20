@@ -555,6 +555,14 @@ body.light-theme {
 	border-radius: 1rem;
 }
 
+.work__card--full img {
+	width: 700px;
+}
+
+.work__card--full {
+	grid-column: 1 / -1;
+}
+
 .work__img {
 	border-radius: 1rem;
 	margin-bottom: 0.75rem;
@@ -765,7 +773,6 @@ footer__link {
 	background-color: hsl(var(--second-hue), 8%, 42%);
 }
 
-
 .popup {
 	position: fixed;
 	display: flex;
@@ -779,16 +786,18 @@ footer__link {
 
 .caroImage {
 	padding: 1rem;
-	border-radius: .5rem ;
+	border-radius: 0.5rem;
 	background: #3f3f3f70;
 }
 
-.caroImage > img {
-
-	/* aspect-ratio: 4 / 5; */
+#face-demo-popup > .caroImage > img {
 	width: 500px;
 	object-fit: scale-down;
+}
 
+#lab-scene-popup > .caroImage > a > img {
+	width: 1200px;
+	object-fit: scale-down;
 }
 
 .hidden {
@@ -797,25 +806,20 @@ footer__link {
 
 .leftarrow,
 .rightarrow {
-
 	color: #fff;
 	font-size: 3rem;
-	background-color: rgba(255, 255, 255, .1);
+	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 2rem;
-	
 }
 
 .light-theme .leftarrow,
-.light-theme .rightarrow{
+.light-theme .rightarrow {
 	color: #000;
 }
-
 
 .work__card a {
 	cursor: pointer;
 }
-
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -888,6 +892,11 @@ footer__link {
 	}
 	.work__img {
 		width: 295px;
+	}
+
+	.lab-scene-popup .caroImage img {
+		height: 900px !important;
+		width: 1000px !important;
 	}
 
 	.contact__info {
